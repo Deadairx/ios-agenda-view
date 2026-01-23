@@ -8,14 +8,23 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject private var authService = GoogleAuthService()
+    @StateObject private var dataManager: CalendarDataManager
+
+    init() {
+        let auth = GoogleAuthService()
+        _authService = StateObject(wrappedValue: auth)
+        _dataManager = StateObject(wrappedValue: CalendarDataManager(authService: auth))
+    }
+
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        Group {
+            if authService.isAuthenticated {
+                AgendaListView(authService: authService, dataManager: dataManager)
+            } else {
+                SignInView(authService: authService)
+            }
         }
-        .padding()
     }
 }
 

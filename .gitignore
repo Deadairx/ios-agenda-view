@@ -1,6 +1,10 @@
 # Secrets
 Secrets.plist
 
+# Claude
+.claude/
+PROMPT.md
+
 # Xcode
 **/*.xcodeproj/project.xcworkspace/
 **/*.xcodeproj/xcuserdata/

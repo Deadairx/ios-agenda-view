@@ -14,6 +14,24 @@
 		B9FC0A222F1EC45300702C63 /* AgendaViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9FC0A212F1EC45300702C63 /* AgendaViewTests.swift */; };
 		B9FC0A2C2F1EC45300702C63 /* AgendaViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9FC0A2B2F1EC45300702C63 /* AgendaViewUITests.swift */; };
 		B9FC0A2E2F1EC45300702C63 /* AgendaViewUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9FC0A2D2F1EC45300702C63 /* AgendaViewUITestsLaunchTests.swift */; };
+		B9FC0A402F1EC50000702C63 /* CalendarEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9FC0A3F2F1EC50000702C63 /* CalendarEvent.swift */; };
+		B9FC0A422F1EC50000702C63 /* GoogleCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9FC0A412F1EC50000702C63 /* GoogleCalendar.swift */; };
+		B9FC0A442F1EC50000702C63 /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9FC0A432F1EC50000702C63 /* KeychainService.swift */; };
+		B9FC0A462F1EC50000702C63 /* GoogleAuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9FC0A452F1EC50000702C63 /* GoogleAuthService.swift */; };
+		B9FC0A482F1EC50000702C63 /* GoogleCalendarService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9FC0A472F1EC50000702C63 /* GoogleCalendarService.swift */; };
+		B9FC0A4A2F1EC50000702C63 /* CalendarDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9FC0A492F1EC50000702C63 /* CalendarDataManager.swift */; };
+		B9FC0A4C2F1EC50000702C63 /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9FC0A4B2F1EC50000702C63 /* StorageService.swift */; };
+		B9FC0A4E2F1EC50000702C63 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9FC0A4D2F1EC50000702C63 /* SignInView.swift */; };
+		B9FC0A502F1EC50000702C63 /* AgendaListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9FC0A4F2F1EC50000702C63 /* AgendaListView.swift */; };
+		B9FC0A522F1EC50000702C63 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9FC0A512F1EC50000702C63 /* SettingsView.swift */; };
+		B9FC0A542F1EC50000702C63 /* Secrets.plist in Resources */ = {isa = PBXBuildFile; fileRef = B9FC0A532F1EC50000702C63 /* Secrets.plist */; };
+		B9FC0A602F1EC60000702C63 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9FC0A5F2F1EC60000702C63 /* WidgetKit.framework */; };
+		B9FC0A622F1EC60000702C63 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9FC0A612F1EC60000702C63 /* SwiftUI.framework */; };
+		B9FC0A652F1EC60000702C63 /* AgendaWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9FC0A642F1EC60000702C63 /* AgendaWidget.swift */; };
+		B9FC0A672F1EC60000702C63 /* WidgetModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9FC0A662F1EC60000702C63 /* WidgetModels.swift */; };
+		B9FC0A692F1EC60000702C63 /* WidgetStorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9FC0A682F1EC60000702C63 /* WidgetStorageService.swift */; };
+		B9FC0A6B2F1EC60000702C63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9FC0A6A2F1EC60000702C63 /* Assets.xcassets */; };
+		B9FC0A6F2F1EC60000702C63 /* AgendaWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = B9FC0A5D2F1EC60000702C63 /* AgendaWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +49,28 @@
 			remoteGlobalIDString = B9FC0A0C2F1EC45100702C63;
 			remoteInfo = AgendaView;
 		};
+		B9FC0A6D2F1EC60000702C63 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B9FC0A052F1EC45100702C63 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B9FC0A5C2F1EC60000702C63;
+			remoteInfo = AgendaWidgetExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B9FC0A702F1EC60000702C63 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B9FC0A6F2F1EC60000702C63 /* AgendaWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		B9FC0A0D2F1EC45100702C63 /* AgendaView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AgendaView.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +83,27 @@
 		B9FC0A272F1EC45300702C63 /* AgendaViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AgendaViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9FC0A2B2F1EC45300702C63 /* AgendaViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgendaViewUITests.swift; sourceTree = "<group>"; };
 		B9FC0A2D2F1EC45300702C63 /* AgendaViewUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgendaViewUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B9FC0A3F2F1EC50000702C63 /* CalendarEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarEvent.swift; sourceTree = "<group>"; };
+		B9FC0A412F1EC50000702C63 /* GoogleCalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleCalendar.swift; sourceTree = "<group>"; };
+		B9FC0A432F1EC50000702C63 /* KeychainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainService.swift; sourceTree = "<group>"; };
+		B9FC0A452F1EC50000702C63 /* GoogleAuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleAuthService.swift; sourceTree = "<group>"; };
+		B9FC0A472F1EC50000702C63 /* GoogleCalendarService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleCalendarService.swift; sourceTree = "<group>"; };
+		B9FC0A492F1EC50000702C63 /* CalendarDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarDataManager.swift; sourceTree = "<group>"; };
+		B9FC0A4B2F1EC50000702C63 /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
+		B9FC0A4D2F1EC50000702C63 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		B9FC0A4F2F1EC50000702C63 /* AgendaListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgendaListView.swift; sourceTree = "<group>"; };
+		B9FC0A512F1EC50000702C63 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		B9FC0A532F1EC50000702C63 /* Secrets.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Secrets.plist; path = ../../Secrets.plist; sourceTree = "<group>"; };
+		B9FC0A552F1EC50000702C63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B9FC0A562F1EC50000702C63 /* AgendaView-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AgendaView-Bridging-Header.h"; sourceTree = "<group>"; };
+		B9FC0A5D2F1EC60000702C63 /* AgendaWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = AgendaWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9FC0A5F2F1EC60000702C63 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		B9FC0A612F1EC60000702C63 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		B9FC0A642F1EC60000702C63 /* AgendaWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgendaWidget.swift; sourceTree = "<group>"; };
+		B9FC0A662F1EC60000702C63 /* WidgetModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetModels.swift; sourceTree = "<group>"; };
+		B9FC0A682F1EC60000702C63 /* WidgetStorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetStorageService.swift; sourceTree = "<group>"; };
+		B9FC0A6A2F1EC60000702C63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B9FC0A6C2F1EC60000702C63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +128,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B9FC0A5A2F1EC60000702C63 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9FC0A622F1EC60000702C63 /* SwiftUI.framework in Frameworks */,
+				B9FC0A602F1EC60000702C63 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -75,8 +144,10 @@
 			isa = PBXGroup;
 			children = (
 				B9FC0A0F2F1EC45100702C63 /* AgendaView */,
+				B9FC0A632F1EC60000702C63 /* AgendaWidget */,
 				B9FC0A202F1EC45300702C63 /* AgendaViewTests */,
 				B9FC0A2A2F1EC45300702C63 /* AgendaViewUITests */,
+				B9FC0A5E2F1EC60000702C63 /* Frameworks */,
 				B9FC0A0E2F1EC45100702C63 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -87,6 +158,7 @@
 				B9FC0A0D2F1EC45100702C63 /* AgendaView.app */,
 				B9FC0A1D2F1EC45300702C63 /* AgendaViewTests.xctest */,
 				B9FC0A272F1EC45300702C63 /* AgendaViewUITests.xctest */,
+				B9FC0A5D2F1EC60000702C63 /* AgendaWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -96,7 +168,13 @@
 			children = (
 				B9FC0A102F1EC45100702C63 /* AgendaViewApp.swift */,
 				B9FC0A122F1EC45100702C63 /* ContentView.swift */,
+				B9FC0A3E2F1EC50000702C63 /* Models */,
+				B9FC0A572F1EC50000702C63 /* Services */,
+				B9FC0A582F1EC50000702C63 /* Views */,
 				B9FC0A142F1EC45300702C63 /* Assets.xcassets */,
+				B9FC0A532F1EC50000702C63 /* Secrets.plist */,
+				B9FC0A552F1EC50000702C63 /* Info.plist */,
+				B9FC0A562F1EC50000702C63 /* AgendaView-Bridging-Header.h */,
 				B9FC0A162F1EC45300702C63 /* Preview Content */,
 			);
 			path = AgendaView;
@@ -127,6 +205,58 @@
 			path = AgendaViewUITests;
 			sourceTree = "<group>";
 		};
+		B9FC0A3E2F1EC50000702C63 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B9FC0A3F2F1EC50000702C63 /* CalendarEvent.swift */,
+				B9FC0A412F1EC50000702C63 /* GoogleCalendar.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B9FC0A572F1EC50000702C63 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B9FC0A432F1EC50000702C63 /* KeychainService.swift */,
+				B9FC0A452F1EC50000702C63 /* GoogleAuthService.swift */,
+				B9FC0A472F1EC50000702C63 /* GoogleCalendarService.swift */,
+				B9FC0A492F1EC50000702C63 /* CalendarDataManager.swift */,
+				B9FC0A4B2F1EC50000702C63 /* StorageService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		B9FC0A582F1EC50000702C63 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B9FC0A4D2F1EC50000702C63 /* SignInView.swift */,
+				B9FC0A4F2F1EC50000702C63 /* AgendaListView.swift */,
+				B9FC0A512F1EC50000702C63 /* SettingsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B9FC0A5E2F1EC60000702C63 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B9FC0A5F2F1EC60000702C63 /* WidgetKit.framework */,
+				B9FC0A612F1EC60000702C63 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B9FC0A632F1EC60000702C63 /* AgendaWidget */ = {
+			isa = PBXGroup;
+			children = (
+				B9FC0A642F1EC60000702C63 /* AgendaWidget.swift */,
+				B9FC0A662F1EC60000702C63 /* WidgetModels.swift */,
+				B9FC0A682F1EC60000702C63 /* WidgetStorageService.swift */,
+				B9FC0A6A2F1EC60000702C63 /* Assets.xcassets */,
+				B9FC0A6C2F1EC60000702C63 /* Info.plist */,
+			);
+			path = AgendaWidget;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,10 +267,12 @@
 				B9FC0A092F1EC45100702C63 /* Sources */,
 				B9FC0A0A2F1EC45100702C63 /* Frameworks */,
 				B9FC0A0B2F1EC45100702C63 /* Resources */,
+				B9FC0A702F1EC60000702C63 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				B9FC0A6E2F1EC60000702C63 /* PBXTargetDependency */,
 			);
 			name = AgendaView;
 			productName = AgendaView;
@@ -183,6 +315,23 @@
 			productReference = B9FC0A272F1EC45300702C63 /* AgendaViewUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		B9FC0A5C2F1EC60000702C63 /* AgendaWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9FC0A732F1EC60000702C63 /* Build configuration list for PBXNativeTarget "AgendaWidgetExtension" */;
+			buildPhases = (
+				B9FC0A592F1EC60000702C63 /* Sources */,
+				B9FC0A5A2F1EC60000702C63 /* Frameworks */,
+				B9FC0A5B2F1EC60000702C63 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AgendaWidgetExtension;
+			productName = AgendaWidgetExtension;
+			productReference = B9FC0A5D2F1EC60000702C63 /* AgendaWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -204,6 +353,9 @@
 						CreatedOnToolsVersion = 15.4;
 						TestTargetID = B9FC0A0C2F1EC45100702C63;
 					};
+					B9FC0A5C2F1EC60000702C63 = {
+						CreatedOnToolsVersion = 15.4;
+					};
 				};
 			};
 			buildConfigurationList = B9FC0A082F1EC45100702C63 /* Build configuration list for PBXProject "AgendaView" */;
@@ -222,6 +374,7 @@
 				B9FC0A0C2F1EC45100702C63 /* AgendaView */,
 				B9FC0A1C2F1EC45300702C63 /* AgendaViewTests */,
 				B9FC0A262F1EC45300702C63 /* AgendaViewUITests */,
+				B9FC0A5C2F1EC60000702C63 /* AgendaWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -232,6 +385,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B9FC0A182F1EC45300702C63 /* Preview Assets.xcassets in Resources */,
+				B9FC0A542F1EC50000702C63 /* Secrets.plist in Resources */,
 				B9FC0A152F1EC45300702C63 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -250,6 +404,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B9FC0A5B2F1EC60000702C63 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9FC0A6B2F1EC60000702C63 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -259,6 +421,16 @@
 			files = (
 				B9FC0A132F1EC45100702C63 /* ContentView.swift in Sources */,
 				B9FC0A112F1EC45100702C63 /* AgendaViewApp.swift in Sources */,
+				B9FC0A402F1EC50000702C63 /* CalendarEvent.swift in Sources */,
+				B9FC0A422F1EC50000702C63 /* GoogleCalendar.swift in Sources */,
+				B9FC0A442F1EC50000702C63 /* KeychainService.swift in Sources */,
+				B9FC0A462F1EC50000702C63 /* GoogleAuthService.swift in Sources */,
+				B9FC0A482F1EC50000702C63 /* GoogleCalendarService.swift in Sources */,
+				B9FC0A4A2F1EC50000702C63 /* CalendarDataManager.swift in Sources */,
+				B9FC0A4C2F1EC50000702C63 /* StorageService.swift in Sources */,
+				B9FC0A4E2F1EC50000702C63 /* SignInView.swift in Sources */,
+				B9FC0A502F1EC50000702C63 /* AgendaListView.swift in Sources */,
+				B9FC0A522F1EC50000702C63 /* SettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +451,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B9FC0A592F1EC60000702C63 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9FC0A652F1EC60000702C63 /* AgendaWidget.swift in Sources */,
+				B9FC0A672F1EC60000702C63 /* WidgetModels.swift in Sources */,
+				B9FC0A692F1EC60000702C63 /* WidgetStorageService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -291,6 +473,11 @@
 			isa = PBXTargetDependency;
 			target = B9FC0A0C2F1EC45100702C63 /* AgendaView */;
 			targetProxy = B9FC0A282F1EC45300702C63 /* PBXContainerItemProxy */;
+		};
+		B9FC0A6E2F1EC60000702C63 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B9FC0A5C2F1EC60000702C63 /* AgendaWidgetExtension */;
+			targetProxy = B9FC0A6D2F1EC60000702C63 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -347,7 +534,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -404,7 +591,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -417,14 +604,17 @@
 		B9FC0A322F1EC45300702C63 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AgendaView/AgendaView.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"AgendaView/Preview Content\"";
 				DEVELOPMENT_TEAM = 484T9YJ76A;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AgendaView/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -438,6 +628,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = deadairx.AgendaView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "AgendaView/AgendaView-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -446,14 +637,17 @@
 		B9FC0A332F1EC45300702C63 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AgendaView/AgendaView.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"AgendaView/Preview Content\"";
 				DEVELOPMENT_TEAM = 484T9YJ76A;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AgendaView/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -467,6 +661,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = deadairx.AgendaView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "AgendaView/AgendaView-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -481,7 +676,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 484T9YJ76A;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = deadairx.AgendaViewTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -501,7 +696,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 484T9YJ76A;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = deadairx.AgendaViewTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -548,6 +743,62 @@
 			};
 			name = Release;
 		};
+		B9FC0A712F1EC60000702C63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = AgendaWidget/AgendaWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 484T9YJ76A;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AgendaWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = AgendaWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = deadairx.AgendaView.AgendaWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B9FC0A722F1EC60000702C63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = AgendaWidget/AgendaWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 484T9YJ76A;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AgendaWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = AgendaWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = deadairx.AgendaView.AgendaWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -583,6 +834,15 @@
 			buildConfigurations = (
 				B9FC0A382F1EC45300702C63 /* Debug */,
 				B9FC0A392F1EC45300702C63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B9FC0A732F1EC60000702C63 /* Build configuration list for PBXNativeTarget "AgendaWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9FC0A712F1EC60000702C63 /* Debug */,
+				B9FC0A722F1EC60000702C63 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
