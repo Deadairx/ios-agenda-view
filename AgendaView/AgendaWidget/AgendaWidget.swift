@@ -95,12 +95,13 @@ struct LockScreenWidgetView: View {
 
     private var displayItems: [DisplayItem] {
         var items: [DisplayItem] = []
-        var addedTomorrowSeparator = false
+        var lastDay: Date?
 
         for event in events.prefix(5) {
-            if event.isTomorrow && !addedTomorrowSeparator {
-                items.append(.separator("Tomorrow"))
-                addedTomorrowSeparator = true
+            let eventDay = event.calendarDay
+            if lastDay != eventDay {
+                items.append(.separator(event.compactDayHeaderText))
+                lastDay = eventDay
             }
             items.append(.event(event))
         }
@@ -167,12 +168,13 @@ struct HomeScreenWidgetView: View {
 
     private var displayItems: [DisplayItem] {
         var items: [DisplayItem] = []
-        var addedTomorrowSeparator = false
+        var lastDay: Date?
 
         for event in events {
-            if event.isTomorrow && !addedTomorrowSeparator {
-                items.append(.separator("Tomorrow"))
-                addedTomorrowSeparator = true
+            let eventDay = event.calendarDay
+            if lastDay != eventDay {
+                items.append(.separator(event.dayHeaderText))
+                lastDay = eventDay
             }
             items.append(.event(event))
         }

@@ -33,6 +33,37 @@ struct WidgetCalendarEvent: Identifiable, Codable {
     var isTomorrow: Bool {
         Calendar.current.isDateInTomorrow(startDate)
     }
+
+    /// Returns the calendar day component for grouping events by day
+    var calendarDay: Date {
+        Calendar.current.startOfDay(for: startDate)
+    }
+
+    /// Returns a formatted day header string (e.g., "Today", "Tomorrow", "Wed, Feb 5")
+    var dayHeaderText: String {
+        if isToday {
+            return "Today"
+        } else if isTomorrow {
+            return "Tomorrow"
+        } else {
+            let formatter = DateFormatter()
+            formatter.dateFormat = "EEE, MMM d"
+            return formatter.string(from: startDate)
+        }
+    }
+
+    /// Returns a compact day header for lock screen (e.g., "Today", "Tomorrow", "Wed 5")
+    var compactDayHeaderText: String {
+        if isToday {
+            return "Today"
+        } else if isTomorrow {
+            return "Tomorrow"
+        } else {
+            let formatter = DateFormatter()
+            formatter.dateFormat = "EEE d"
+            return formatter.string(from: startDate)
+        }
+    }
 }
 
 extension Color {
