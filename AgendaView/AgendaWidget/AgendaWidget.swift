@@ -100,7 +100,9 @@ struct LockScreenWidgetView: View {
         for event in events.prefix(5) {
             let eventDay = event.calendarDay
             if lastDay != eventDay {
-                items.append(.separator(event.compactDayHeaderText))
+                if !event.isToday {
+                    items.append(.separator(event.compactDayHeaderText))
+                }
                 lastDay = eventDay
             }
             items.append(.event(event))
